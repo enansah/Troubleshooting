@@ -1,10 +1,32 @@
-Techniques
+//Techniques
 strace command: shows all the system calls the program made.
 strace -o: is used to save the trace in a file for later 
 reference
+ltrace command: shows library calls the software made.
 
 Tools to analyze network traffic 
 1. tcpdump: a CL tool that captures and show network packets
 2. wireshark: adds a graphic interface that makes packets easier
 to filter 
+
+Load average refers to the time taking for system call to 
+execute.
+Overloading is when the program that is being executed is making 
+too many system calls and tends to slow the system 
+
+//Reproduction case is to verify whether a problem exist or not.
+By recreating the problem  
+
+//Finding the root cause 
+Check hypothesis in a test environment 
+
+Tools 
+IOtop- used to analyse input-output connections
+IOstat and vmstat- shows statistics on input and output operations 
+and vitual memory operations.
+IFtop- show the direction of the traffic 
+IOnice- use to dedicate memory for execution
+
+
+//rsync command is used to backup data
 
