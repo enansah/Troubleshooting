@@ -9,5 +9,3 @@ Problem solving steps
 1.Gather information
 2.Fiinding the root course of the problem
 3.Perform the necessary remediation to prevent problem from happening again.
-
-Debugging techniques 
