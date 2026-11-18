@@ -1,0 +1,10 @@
+Techniques
+strace command: shows all the system calls the program made.
+strace -o: is used to save the trace in a file for later 
+reference
+
+Tools to analyze network traffic 
+1. tcpdump: a CL tool that captures and show network packets
+2. wireshark: adds a graphic interface that makes packets easier
+to filter 
+
