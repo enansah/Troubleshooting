@@ -31,3 +31,4 @@ IOnice- use to dedicate memory for execution
 //rsync command is used to backup data
 
 Heisenbug: The observer effect
+" The idea that observing a phenomenon alters the phenomenon"
