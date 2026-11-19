@@ -1,0 +1,7 @@
+Linear search involve iteration over ids in a singular format 
+Binary search involves bisecting sorted groups into two at every search instance 
+
+Binary search notation
+Base 2 of the logarithym of the list length
+
+The process is referred to as bisecting 
