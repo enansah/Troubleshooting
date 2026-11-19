@@ -1,0 +1,74 @@
+Closing tabs is the first step
+
+General strategy for addressing slowness is to 
+identify bottlenecks.
+
+Reading from disk is slower than reading from Ram and cpu 
+
+A frequently executed program or file can be stored in a cache 
+A cache is stores data in a form faster to access than it's 
+original form. eg. web proxy 
+
+slow web app
+We use nice for starting a process with a different priority and renice for ​changing 
+the priority of a process that's already running. 
+ps ax coommand which shows us all the running processes ​on the computer
+
+ab is ApacheBench. It sends many requests to a web page and measures how fast the 
+server responds:
+= ab -n 500 -c 10 http://example.com/
+
+//Writing efficient code 
+
+One important thing to keep in mind though is that we should always ​start by writing 
+clear code that does what it should and only try to make it ​faster if we realize that it's 
+not fast enough.
+
+f we want our code to finish faster, we need to make our computer do less ​work, and to do 
+this, we'll have to avoid doing work that isn't really ​needed. 
+
+Profiler
+A profiler is a tool that measures the resources that our code is using, giving ​us a better 
+understanding of what's going on. 
+cProfile is a type of profile used to count function calls for python.
+pprofile3 is also a profiler in python.
+
+Profiles play an essential role not only in software development but also within the broader IT landscape. 
+Profiling helps software engineers design efficient and effective applications by monitoring and analyzing 
+real-time resource use.
+
+//Expensive loop 
+Avoid doing expensive actions in the loop
+Break out of the loop after execution for sometime 
+Avoid doing an expensive loop over and over by ​storing the information in a dictionary and then accessing the dictionary ​instead
+
+There's three different values. ​Real, user, and sys. 
+​Real is the amount of actual time that it took to execute the command. 
+​This value is sometimes called wall-clock time because it's how much ​time a clock hanging on the wall would measure no matter what the computer's ​doing. 
+User is the time spent doing operations in the user space. ​
+Sys is the time spent doing system level operations. ​
+
+kcachegrind is used to look at the contents, ​which is a graphical interface for looking into these files.
+
+
+//Parallelizing operation(Concurrency)
+Threads let us run parallel tasks inside a process.
+Parallelizing could be a wrong solution for other programs since it could create bottlenecks.
+
+In Python, we can use the Threading or AsyncIO modules to ​do this. These modules let us specify which parts of the code we want to run ​in separate 
+threads or as separate asynchronous events, and how we want the ​results of each to be combined in the end.
+
+A script is CPU bound if you are running operations in parallel using all available CPU time.  
+
+There is no need for a cloud storage data that is to be store is not huge since it could reduce the runtime of the program.
+But upgrade to cloud storage when data increases. 
+
+Futures is the module that makes it possible to run operations in a script in parallel that makes better use of CPU processing time.
+Syntax:
+Executor = future.ThreadPoolExecutor - this is to create threads for programs
+Executor = future.ProcessPoolExecutor - this is to make process run concurrently using all cores 
+
+
+Asyncio events and task loops
+Python's asyncio library enables concurrent execution of multiple tasks through asynchronous operations using event loops and coroutines. 
+A coroutine can pause execution while waiting for a specific operation, such as reading or saving data. 
