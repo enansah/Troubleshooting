@@ -1,0 +1,36 @@
+To check the health of our RAM, we can use the memtest 86 tool to look 
+for ​errors. We run this tool on boot instead of the normal operating system ​so that it can 
+access all of the available memory and verify if the data ​written to memory is the same when it tries to read it back.
+
+Look at the output of the tools that check the ​disk for bad sectors, and you'll also want to use these smart tools 
+which can ​help detect errors and even try to anticipate problems before they affect ​the computer's performance.
+
+Approaches 
+1.Look for logs 
+2.Enable debug logging 
+3.Use tools to trace what is going on in the system. eg strace 
+
+Summarized approach 
+So to sum this up, to find the root cause of a crashing application ​will want to look at all available logs, figure out 
+what changed, trace the ​system or library calls the program makes and create the smallest possible ​reproduction case.
+
+Wrapper
+A Wrapper is a function or program that provides a compatibility layer between ​two functions or programs so they can work 
+well together.
+
+//Container
+A container allows the application to run in its own environment without interfering with the rest of the system. 
+
+Watchdogs
+ ​This is a process that checks whether a program is running and when it's not, ​starts the program again. ​To implement this, 
+ we need to write a script that stays running in the ​background and periodically checks if the other program is running. 
+
+
+ Netstat command which can give us a bunch of information about ​our network connections depending on the flags we pass. 
+ ​This command accesses a bunch of sockets that are restricted to route the ​administrator user on Linux. 
+
+ The /etc directory will contain the application folder that stores configuration files. 
+
+ Blue screen of death (BSoD)
+A common disruption in computing systems is the kernel panic in Mac OS, also known as the notorious 
+"Blue Screen of Death" (BSoD) in Windows, both of which require restarting the computer.
